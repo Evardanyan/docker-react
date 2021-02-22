@@ -1,6 +1,9 @@
 sudo: required
 
 services: 
+  - docker 
+  
+before_intsll:  
   - docker build -t evardanyan/docker-react -f Dockerfile.dev .
 
 script:
